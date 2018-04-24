@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:layout_marginStart="3dp"
+        android:width="1080dp"
+        android:fontFamily="casual"
+        android:text="Welcome to Explore UIUC!"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="223dp"
+        android:layout_height="97dp"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:fontFamily="casual"
+        android:text="Let's Go!"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="350dp" />
+
+    <TextView
+        android:id="@+id/appDescription"
+        android:layout_width="164dp"
+        android:layout_height="149dp"
+        android:text="The goal of this app is to explore campus, while having fun! By pressing the button, you will be randomly given a nearby university building, and an activity there that will prompt you to explore the building!"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="139dp" />
+</android.support.constraint.ConstraintLayout>
