@@ -32,18 +32,28 @@
         android:id="@+id/playButton"
         android:layout_width="223dp"
         android:layout_height="97dp"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:backgroundTint="@android:color/holo_orange_dark"
         android:fontFamily="casual"
         android:text="Let's Go!"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="350dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/appDescription"
         android:layout_width="237dp"
-        android:layout_height="125dp"
-        android:text="The goal of this app is to explore campus, while having fun! By pressing the button, you will be randomly given a nearby university building, and an activity there that will prompt you to explore the building!"
+        android:layout_height="121dp"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="In this game, you will be provided a UIUC building, and some cool things to do and see there!"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="118dp" />
+        app:layout_constraintBottom_toTopOf="@+id/playButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
