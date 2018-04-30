@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_light"
+    android:background="@android:color/holo_orange_dark"
     tools:context=".MenuActivity">
 
     <TextView
@@ -35,7 +35,7 @@
         android:layout_marginBottom="28dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:backgroundTint="@android:color/holo_orange_dark"
+        android:backgroundTint="@android:color/holo_blue_dark"
         android:fontFamily="casual"
         android:text="Let's Go!"
         app:layout_constraintBottom_toBottomOf="parent"

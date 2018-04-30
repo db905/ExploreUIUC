@@ -23,5 +23,4 @@ public class Building {
     public void addHistory(String fact) {
         history.add(fact);
     }
-
 }

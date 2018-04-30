@@ -93,3 +93,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     GeocodingResult
 }
 */
+    /* <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" /> */
