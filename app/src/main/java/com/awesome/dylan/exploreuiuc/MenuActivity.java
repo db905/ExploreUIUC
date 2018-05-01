@@ -38,7 +38,7 @@ public class MenuActivity extends AppCompatActivity {
         altgeld.addHistory("The exterior features the only gargoyle on campus.");
         altgeld.addHistory("Altgeld made a brief appearance in the 1945 film, The House on 92nd Street.");
         altgeld.addHistory("The University chimes consists of 15 bells, weighing a total of seven and a half tons.");
-        altgeld.addImage("altgeld.png");
+        altgeld.addImage("altgeld");
 
         /*Building siebel = new Building("Siebel Center for Computer Science", "201 N Goodwin Ave");
         buildingList.add(siebel);
