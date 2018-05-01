@@ -74,7 +74,7 @@ public class MenuActivity extends AppCompatActivity {
         buildingList.add(ceramics);
         ceramics.addActivity("Find ten differences in the bricks on the first floor.");
         ceramics.addActivity("See if you can fit inside the old kiln!");
-        ceramics.addActivity("Knock on room 115, ask for Dylan Blake. Tell him he needs to eat dinner.");
+        ceramics.addActivity("Knock on the door of a lab and bother a grad student. ");
         ceramics.addHistory("In 1914, the State of Illinois ranked fourth in the country in the value of its ceramic exports.");
         ceramics.addHistory("The Ceramic Engineering Kiln House and the Mining Engineering Laboratory used to be housed in the same building.");
         ceramics.addHistory("In 1989, the Metallurgy, Mining and Ceramics were merged to form Materials Science and Engineering!");

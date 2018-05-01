@@ -39,7 +39,7 @@ public class WelcomeActivity extends AppCompatActivity {
         his3 = i.getStringExtra("history3");
         image = i.getStringExtra("image");
         TextView welcomeView = (TextView) findViewById(R.id.buildingName);
-        welcomeView.setText("Your Destination is " + bname);
+        welcomeView.setText("Welcome to " + bname);
         // add map intent
         ImageView buildingPic = (ImageView) findViewById(R.id.buildingPic);
         int id = this.getResources().getIdentifier(image, "drawable", this.getPackageName());
