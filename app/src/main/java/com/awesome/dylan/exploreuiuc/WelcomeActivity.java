@@ -1,6 +1,7 @@
 package com.awesome.dylan.exploreuiuc;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -41,12 +42,8 @@ public class WelcomeActivity extends AppCompatActivity {
         welcomeView.setText("Your Destination is " + bname);
         // add map intent
         ImageView buildingPic = (ImageView) findViewById(R.id.buildingPic);
-        Log.d("IMAGE ASSET LOAD", image);
-        File img = new File("app/pics/" + image);
-        Log.d("IMAGE FILE OBJECT", img.getPath());
-        String curr = System.getProperty("user.dir");
-        Log.d("CURRENT DIRECTORY", curr);
-        buildingPic.setImageURI(Uri.fromFile(img));
+        int id = this.getResources().getIdentifier(image, "drawable", this.getPackageName());
+        buildingPic.setImageResource(id);
         //buildingPic.setImageResource(/**int resourceID*/);
     }
 
