@@ -25,16 +25,22 @@ public class MenuActivity extends AppCompatActivity {
         /**
          * Adds all buildings in the app.
          */
-        Building armory = new Building("Armory Building", "505 E Armory Ave");
+        /*Building armory = new Building("Armory Building", "505 E Armory Ave");
         buildingList.add(armory);
-
         Building union = new Building("Illini Union", "1401 W Green St");
-        buildingList.add(union);
+        buildingList.add(union);*/
 
         Building altgeld = new Building("Altgeld Hall", "1409 W Green St");
         buildingList.add(altgeld);
+        altgeld.addActivity("Take a tour of the bell tower, and request a song to be played on the chimes!");
+        altgeld.addActivity("Find a book published before 1600 A.D. in the Mathematics Library.");
+        altgeld.addActivity("Find Professor Bruce Reznick and take a picture with his colorful shirt du jour!");
+        altgeld.addHistory("The exterior features the only gargoyle on campus.");
+        altgeld.addHistory("Altgeld made a brief appearance in the 1945 film, The House on 92nd Street.");
+        altgeld.addHistory("The University chimes consists of 15 bells, weighing a total of seven and a half tons.");
+        altgeld.addImage("Altgeld.JPG");
 
-        Building siebel = new Building("Siebel Center for Computer Science", "201 N Goodwin Ave");
+        /*Building siebel = new Building("Siebel Center for Computer Science", "201 N Goodwin Ave");
         buildingList.add(siebel);
 
         Building krannert = new Building( "Krannert Center for the Performing Arts", "500 S Goodwin Ave");
@@ -77,7 +83,7 @@ public class MenuActivity extends AppCompatActivity {
         buildingList.add(turner);
 
         Building freer = new Building("Freer Hall", "906 S Goodwin Ave");
-        buildingList.add(freer);
+        buildingList.add(freer);*/
     }
 
     private void configurePlayButton() {
@@ -87,7 +93,14 @@ public class MenuActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Building subject = BuildingCall.getBuilding(buildingList);
                 Intent i = new Intent(MenuActivity.this, WelcomeActivity.class);
-                i.putExtra("Bname",subject.name);
+                i.putExtra("Bname", subject.name);
+                i.putExtra("activity1", subject.activities.get(0));
+                i.putExtra("activity2", subject.activities.get(1));
+                i.putExtra("activity3", subject.activities.get(2));
+                i.putExtra("history1", subject.history.get(0));
+                i.putExtra("history2", subject.history.get(1));
+                i.putExtra("history3", subject.history.get(2));
+                i.putExtra("image", subject.image);
                 startActivity(i);
                 //intent.putExtra()
             }

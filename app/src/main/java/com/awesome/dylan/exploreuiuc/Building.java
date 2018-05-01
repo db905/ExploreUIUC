@@ -16,11 +16,15 @@ public class Building {
         this.address = address;
         this.id = idIndex;
         idIndex++;
+        this.activities = new ArrayList<>();
+        this.history = new ArrayList<>();
+        this.image = "test";
     }
     public void addActivity(String activity) {
         this.activities.add(activity);
     }
     public void addHistory(String fact) {
-        history.add(fact);
+        this.history.add(fact);
     }
+    public void addImage(String imageName) { this.image = imageName; }
 }
