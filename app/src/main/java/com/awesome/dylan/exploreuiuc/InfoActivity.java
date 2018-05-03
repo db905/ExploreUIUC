@@ -13,20 +13,20 @@ public class InfoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info);
-        Intent i = getIntent();
-        String act1 = i.getStringExtra("activity1");
-        String act2 = i.getStringExtra("activity2");
-        String act3 = i.getStringExtra("activity3");
-        String his1 = i.getStringExtra("history1");
-        String his2 = i.getStringExtra("history2");
-        String his3 = i.getStringExtra("history3");
+        Intent j = getIntent();
+        /*String act1 = j.getStringExtra("activity1");
+        String act2 = j.getStringExtra("activity2");
+        String act3 = j.getStringExtra("activity3");*/
+        String his1 = j.getStringExtra("history1");
+        String his2 = j.getStringExtra("history2");
+        String his3 = j.getStringExtra("history3");
         configureButton();
-        TextView activity1 = (TextView) findViewById(R.id.activity1);
+        /*TextView activity1 = (TextView) findViewById(R.id.activity1);
         activity1.setText(act1);
         TextView activity2 = (TextView) findViewById(R.id.activity2);
         activity2.setText(act2);
         TextView activity3 = (TextView) findViewById(R.id.activity3);
-        activity3.setText(act3);
+        activity3.setText(act3);*/
         TextView history1 = (TextView) findViewById(R.id.history1);
         history1.setText(his1);
         TextView history2 = (TextView) findViewById(R.id.history2);
